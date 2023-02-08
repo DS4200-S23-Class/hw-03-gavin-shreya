@@ -19,7 +19,7 @@
 
     <!-- add a button to change the background -->
     <button onclick="changeBackground()">Change Background</button>
-    
+
     <!-- make two columns, with images in the left-->
     <div class="columns">
         <div class="column1">
@@ -31,39 +31,140 @@
             <br>
         </div>
         <div class="column2">
-            <h3 class="row1">Marks:
-                <ul></ul>
-            </h3>
-            <h3 class="row1">Channels:
-                <ul></ul>
-            </h3> 
-            <h3 class="row1">Colormaps:
-                <ul></ul>
-            </h3>
-
-            <h3 class="row2">Marks: 
-                <ul></ul>
-            </h3>
-            <h3 class="row2">Channels:
-                <ul></ul>
-            </h3>
-            <h3 class="row2">Colormaps:
-                <ul></ul>
-            </h3>
-
-            <h3 class="row3">Marks:
-                <ul></ul>
-            </h3>
-            <h3 class="row3">Channels:
-                <ul></ul>
-            </h3>
-            <h3 class="row3">Colormaps:
-                <ul></ul>
-            </h3>
+            <div class="row1">
+                <h3>Marks:</h3>
+                <ul>
+                    <li>Area
+                        <ul>
+                            <li>Map that contains states</li>
+                            <li>The bar for the number of electoral votes</li>
+                        </ul>
+                    </li>
+                    <li>Point
+                        <ul>
+                            <li>Shows electoral votes needed to win</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Channels:</h3>
+                    <ul>
+                        <li>Color Hue
+                            <ul>
+                                <li>Color represents the political party for each candidate with red representing the Republican Party and blue the democratic</li>
+                                <li>Good choice because the distinct colors that have a direct association to a particular political party allow viewers to quickly understand the demographic breakdown</li>
+                            </ul>
+                        </li>
+                        <li>Horizontal Position
+                            <ul>
+                                <li>Horizontal bar that represents electoral votes</li>
+                                <li>This is a good choice as it shows the status of the candidate and visualizes an approximation of how many more votes would be needed to win on each side</li>
+                            </ul>
+                        </li>
+                        <li>Shape
+                            <ul>
+                                <li>The shape represents a map of the United States</li>
+                                <li>Good choice because it allows for a clear understanding of which political party dominates a particular state and the shape is universally known and easy to recognize by its viewers</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3>Colormaps:</h3>
+                    <ul>
+                        <li>Categorical
+                            <ul>
+                                <li>Red and blue are two distinct political parties with two different colors to represent each party</li>
+                                <li>Good mapping as it makes it easy to understand which areas in the visualization correlate to a specific political party</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="row2">
+                <h3>Marks:</h3>
+                <ul>
+                    <li>Line
+                        <ul>
+                            <li>Each line represents the type of hit, dividing the hits into pop ups, fly balls, line drives, and ground balls</li>
+                        </ul>
+                    </li>
+                    <li>Point
+                        <ul>
+                            <li>Points represent each scoring value of battled balls based off of the launch angle and speed off the bat</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Channels:</h3>
+                    <ul>
+                        <li>Color Hue
+                            <ul>
+                                <li>Color represents the scoring value of each of the batted balls, where below average hits are purple, above average hits are orange, and average hits are closer to white</li>
+                                <li>Overall this is a good choice because it is easy to distinguish between the different colors as well as understand that if a score gets closer to average it becomes lighter</li>
+                            </ul>
+                        </li>
+                        <li>Color Saturation
+                            <ul>
+                                <li>The color saturation represents the score of the batted balls, specifically differing in intensity based on how far the ball is from the average. Scores that are further from the average are represented with more intense coloring with a higher saturations, while scores closer to the average are represented with less intensity and lower saturation</li>
+                                <li>This is a good choice as it lets the viewers quickly understand what scores are close to average and which scores are further above or below average</li>
+                            </ul>
+                        </li>
+                        <li>Position- Horizontal and Vertical
+                            <ul>
+                                <li>Helps viewer understand what the score of each batted ball is in relation to its velocity and launch angle</li>
+                                <li>Good choice because it creates an easy to understand visualization of which balls had higher or lower velocities and launch angles</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3>Colormaps:</h3>
+                    <ul>
+                        <li>Divergent
+                            <ul>
+                                <li>This is an ordered attribute. The two extremes are purple and orange, where scores closer to the average get represented in a color that is lighter and closer to white</li>
+                                <li>This is a good choice because it is easy for viewers to understand that the extremities of the range represent the darker colors and the more neutral color is represented but he average scores</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="row3">
+                <h3>Marks:</h3>
+                <ul>
+                    <li>Area
+                        <ul>
+                            <li>Bars that represent the number of games the Mets play against each opponent</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Channels:</h3>
+                    <ul>
+                        <li>Color Hue
+                            <ul>
+                                <li>Color represents where the Mets' opponents are from, whether the opponent is in the same division (green), same league (yellow), or different league (blue)</li>
+                                <li>We think this is a good choice, as it allows viewers to clearly understand which type of league each opponent is from</li>
+                            </ul>
+                        </li>
+                        <li>Size
+                            <ul>
+                                <li>Height of each bar represents the amount of games played against that specific opponent</li>
+                                <li>We think this is a good choice, as it makes it easy for viewers to understand the magnitude of games played with each team represented on the x axis</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3>Colormaps:</h3>
+                    <ul>
+                        <li>Categorical
+                            <ul>
+                                <li>Each color represents the league the opponent is coming from relative to the Mets, with green representing opponents from the same division, yellow representing opponents from the same league, and blue representing opponents in the opposing league</li>
+                                <li>We think this is a good choice because it allows users to easily distinguish between a team based on the league or division it is in</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
         </div>
      </div>
 
      <h2>Acknowledgements:</h2>
+     <ul>
+        <li>https://www.mlb.com/mets/schedule/2023/fullseason</li>
+        <li>https://css-tricks.com/snippets/css/a-guide-to-flexbox/</li>
+        <li>https://www.w3schools.com/css/default.asp</li>
+     </ul>
 
 </body>
 
